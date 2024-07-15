@@ -13,7 +13,7 @@ function App() {
 
   useEffect(()=>{
     dispatch(FetchAllPosts())
-  },[dispatch])
+  },[dispatch ])
 
 
   return (

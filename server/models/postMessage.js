@@ -21,11 +21,10 @@ const postSchema = new mongoose.Schema({
     },
     likeCount : {
         type : Number,
-        defaut : 0
-    },
+        default : 0,
+    }   
 
 
 } , {timestamps : true})
 
-const PostMessage = mongoose.model("PostMessage" , postSchema);
-export default PostMessage
+export const PostMessage = mongoose.model("PostMessage" , postSchema);
